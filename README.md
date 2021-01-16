@@ -14,3 +14,5 @@ Pseudocode for this project
 // Program an alert when the game is finished with a win or lose message
 // when start button is clicked, timer should restart
 // Wins and losses should persist, so make sure they are in local storage
+
+READ ME
