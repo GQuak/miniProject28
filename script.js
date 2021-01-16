@@ -1,4 +1,8 @@
 // Click a button to start a game
+generateBtn.addEventListener("start game", startGame)
+function startGame(){
+
+}
 
 // Display number of blanks from random word that user is trying to guess
 
