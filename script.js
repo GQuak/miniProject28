@@ -25,3 +25,37 @@ function startGame(){
 
 // Wins and losses should persist, so make sure they are in local storage
 
+//TIMER EXAMPLE
+// Selects element by class
+var timerEl = document.querySelector(".timer");
+
+// Selects element by id
+// var mainEl = document.getElementById("main");
+
+var secondsLeft = 10;
+
+function setTime() {
+    // Sets interval in variable
+    var timerInterval = setInterval(function () {
+        secondsLeft--;
+        timerEl.textContent = secondsLeft + " seconds left.";
+
+        if (secondsLeft === 0) {
+            // Stops execution of action at set interval
+            clearInterval(timerInterval);
+            // Calls function to create and append image
+            sendMessage();
+        }
+
+    }, 1000);
+}
+
+// Function to create and append colorsplosion image
+function sendMessage() {
+    timerEl.textContent = " ";
+    //If (they win) {show "You won"} else {show "Game Over"}
+
+}
+
+setTime();
+//END TIMER EXAMPLE
